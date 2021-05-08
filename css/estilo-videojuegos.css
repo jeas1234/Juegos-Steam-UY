@@ -1,0 +1,39 @@
+body{
+	margin: 0em 2em;
+}
+.descripcion{
+	color:white;
+	position: relative;
+	left: 320px;
+	bottom: 400px;
+}
+
+.requisitos__de__sistema{
+	color:white;
+	bottom:290px;
+	position: relative;
+}
+
+h3 {
+	position: relative;
+	bottom: 300px;
+	color:red;
+	font-size: 20px;
+}
+
+h4 {
+	position: relative;
+	left: 320px;
+	bottom: 350px;
+	color:red;
+	font-size:30px;}
+
+
+}
+
+img{
+	max-height: 420px;
+	max-width: 280px;
+	height: 420px;
+	width: 280px; 
+}

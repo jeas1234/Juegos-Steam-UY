@@ -1,0 +1,287 @@
+body{
+	background: black;
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.logotipo{
+	width: 110px;
+}
+.ver2 {
+	text-decoration: none;
+	color:red;}
+
+.ver{
+text-decoration: none;
+color:red;
+
+}
+
+.contenedor{
+	margin:auto;
+	width: 90%;}
+
+ header{
+ 	padding:17px 0px;
+ }
+ header .contenedor{
+ 	display: flex;
+ 	justify-content: space-between;
+ 	font-size:20px;
+ 	align-items :center;
+
+ }
+
+ header a{
+ 	color: #BABABA;
+ 	text-decoration: none;
+ 	margin-right: 40PX;
+ }
+
+ header a.activo{
+ 	color: #FFFFFF;
+
+ }
+ header a:hover{
+ 	color: red;
+ }
+
+ /* VIDEOJUEGO PRINCIPAL */
+
+ .videojuego__principal{
+ 	font-size: 16px;
+ 	min-height: 30em;
+ 	color: white;
+ 	background: background: rgb(2,0,36);
+	background: linear-gradient(100deg, rgba(0,0,0,0.5) 100%, rgba(0,0,0,0.4) 100%, rgba(0,212,255,1) 100%),url(../css/img/portada3.jpg);
+ 	background-position: center center;
+ 	background-size: cover;
+ 	margin-bottom: 3.12em;
+ 	display: flex;
+ 	align-items:flex-end;
+}
+
+.videojuego__principal .contenedor{
+	margin: 0 auto;
+	margin-bottom: 6.250em;
+}
+
+.contenedor__titulo__controles{
+	padding:0px 0px 0px 60px;
+}
+
+.titulo{
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4EM;
+	color:red;
+}
+
+.videojuego__principal .descripcion{
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-height: 50%;
+	margin-bottom:1.25em;
+}
+
+.videojuego__principal .boton{
+	background: white;
+	border:none;
+	border-radius: 0.31em;
+	padding:0.93em 1.87em;
+	margin-right: 1.25em;
+	cursor:pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.videojuego__principal .boton:hover{
+	background: ivory;
+	text-decoration: none;
+}
+
+.descripcion{
+	width: 50%;
+	font: 20px;
+}
+/* configuracion CARRUSEL*/
+
+.videojuego__principal{
+		margin-bottom: -0.5em;
+}
+
+.videojuegos__recomendados .contenedor__principal{
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-top: -2em;
+
+}
+
+
+.videojuegos__recomendados .contenedor__principal .flecha-izquierda,
+.videojuegos__recomendados .contenedor__principal .flecha-derecha{
+	position: absolute;
+	border:none;
+	background:rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor:pointer;
+	top: calc(50% - 25%);
+	z-index:500;
+	transition: .2s ease all; 
+}
+
+.contenedor__titulo__controles{
+	display:flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.contenedor__titulo__controles h3{
+	color:red;
+	font-size: 30px;
+}
+
+.contenedor__titulo__controles .indicadores button{
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor:pointer;
+	border:none;
+	margin-right: 2px;
+}
+
+
+.contenedor__titulo__controles .indicadores button:hover,
+.contenedor__titulo__controles .indicadores button.activo{
+	background:red;
+}
+
+/*IMAGENES CARRUSEL*/
+.videojuegos__recomendados .contenedor__principal{
+	padding:0px 60px 0px 60px;
+}
+
+.videojuegos__recomendados .carrusel__videojuegos{
+	width: 100%;
+	padding: 0;
+	overflow: scroll;
+	scroll-behavior: smooth;
+
+}
+
+.videojuegos__recomendados .carrusel__videojuegos .carrusel{
+	display:flex;
+	flex-grow: nowrap;
+}
+
+.videojuegos__recomendados .carrusel__videojuegos .carrusel .videojuego{
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0,.3)
+}
+.videojuegos__recomendados .carrusel__videojuegos .carrusel .videojuego:hover{
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.videojuegos__recomendados .carrusel__videojuegos .carrusel .videojuego img{
+	width: 80%;
+	vertical-align:top;
+	width: 100px height: 150px;
+}
+
+
+/*botones del carrusel*/
+
+.videojuegos__recomendados .contenedor__principal .flecha-izquierda{
+	left:0;
+}
+
+.videojuegos__recomendados .contenedor__principal .flecha-derecha{
+	right: 0;}
+
+.videojuegos__recomendados .contenedor__principal .flecha-izquierda:hover{
+background: rgba(0,0,0,0.9);}
+
+.videojuegos__recomendados .contenedor__principal .flecha-derecha:hover{
+background: rgba(0,0,0,0.9);	}
+
+/*footer*/
+
+.footer__videojuegos a{
+	color: #BABABA;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-decoration: none;
+	font-size: 18px;
+	padding:30px 140px ;
+}
+
+.footer__videojuegos a:active{
+	color:#FFFFFF;
+}
+
+footer .footer__videojuegos a:hover{
+	color:red;
+
+}
+
+.footer__videojuegos a{
+
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 800px){
+	header .logotipo{
+		margin-bottom: 5px;
+		font-size: 15px
+	}
+	header .contenedor{
+		flex-direction:column;
+		text-align: center; 
+	}
+	.videojuego__principal{
+		font-size: 14px;
+	}
+	.descripcion{
+	width: 100%;
+	}
+
+	.videojuegos__recomendados .contenedor__principal{
+			overflow: visible;
+	}
+
+	.videojuegos__recomendados .contenedor__principal .carrusel{
+		display:grid;
+		grid-template-columns: repeat(3,1fr);
+		grid-gap: 20px;
+	}
+
+	img{
+		width: 100px; height: 180px;
+	}
+
+	.videojuegos__recomendados .indicadores, .videojuegos__recomendados .flecha-izquierda, .videojuegos__recomendados .flecha-derecha{
+		display: none;
+
+	}
+
+	.logotipo{
+		width: 30%;
+		height: 30%
+
+	}
+	footer .footer__videojuegos a{
+		display:block;
+		padding: 5px;
+		margin: 0px 20px;
+	}
