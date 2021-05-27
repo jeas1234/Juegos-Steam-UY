@@ -53,7 +53,7 @@ color:red;
  	font-size: 16px;
  	min-height: 30em;
  	color: white;
- 	background: background: rgb(2,0,36);
+ 	background: rgb(2,0,36);
 	background: linear-gradient(100deg, rgba(0,0,0,0.5) 100%, rgba(0,0,0,0.4) 100%, rgba(0,212,255,1) 100%),url(../css/img/portada3.jpg);
  	background-position: center center;
  	background-size: cover;
@@ -194,7 +194,8 @@ color:red;
 .videojuegos__recomendados .carrusel__videojuegos .carrusel .videojuego img{
 	width: 80%;
 	vertical-align:top;
-	width: 100px height: 150px;
+	width: 300px;
+	height: 400px;
 }
 
 
@@ -235,16 +236,14 @@ footer .footer__videojuegos a:hover{
 
 }
 
-.footer__videojuegos a{
-
-}
-
 /* MEDIA QUERIES */
-@media screen and (max-width: 800px){
-	header .logotipo{
+@media screen and (width:500px) {
+	
+	.logotipo {
 		margin-bottom: 5px;
-		font-size: 15px
+		font-size: 15px;
 	}
+
 	header .contenedor{
 		flex-direction:column;
 		text-align: center; 
@@ -285,3 +284,4 @@ footer .footer__videojuegos a:hover{
 		padding: 5px;
 		margin: 0px 20px;
 	}
+}
